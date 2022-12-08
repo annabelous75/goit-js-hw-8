@@ -25,7 +25,6 @@ updatedata();
 function updatedata() {
   const savedMessage = JSON.parse(localStorage.getItem(LOCAL_STORAGE));
   if (savedMessage) {
-    console.log(savedMessage);
     refs.texttextarea.value = savedMessage.message;
     refs.textemail.value = savedMessage.email;
   }
